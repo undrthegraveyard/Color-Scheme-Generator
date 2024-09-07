@@ -1,13 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="css/index.css">
   <script src="index.js" defer></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Color Scheme Generator</title>
 </head>
 <body>
-  
+  <article class="color-scheme-generator">
+    <div class="color-scheme-generator-header">
+      <div class="seed-color">
+        <label for="seed-color">Seed Color</label>
+        <input type="color" id="seed-color" value="#000000" name="seed-color">
+      </div>
+      <div class="color-scheme">
+        <label for="color-scheme">Color Scheme</label>
+        <select id="color-scheme" name="color-scheme">
+          <option value="monochromatic">Monochromatic</option>
+          <option value="monochromatic-dark">Monochromatic-Dark</option>
+          <option value="monochromatic-light">Monochromatic-Light</option>
+          <option value="analogic">Analogic</option>
+          <option value="complementary">Complementary</option>
+          <option value="analogic-complementary">Analogic-Complementary</option>
+          <option value="triad">Triad</option>
+        </select>
+      </div>
+      <button id="generate-color-scheme">Get Color Scheme</button>
+    </div>
+    <div class="color-scheme-generator-body">
+      <div class ="color-scheme-preview">
+        <div class="color-scheme-preview-item" id="color-scheme-color-1"></div>
+        <div class="color-scheme-preview-item" id="color-scheme-color-2"></div>
+        <div class="color-scheme-preview-item" id="color-scheme-color-3"></div>
+        <div class="color-scheme-preview-item" id="color-scheme-color-4"></div>
+        <div class="color-scheme-preview-item" id="color-scheme-color-5"></div>
+      </div>
+      <div class="color-scheme-values">
+        <span class="color-scheme-value" id="color-scheme-value-1">#ffffff</span>
+        <span class="color-scheme-value" id="color-scheme-value-2">#ffffff</span>
+        <span class="color-scheme-value" id="color-scheme-value-3">#ffffff</span>
+        <span class="color-scheme-value" id="color-scheme-value-4">#ffffff</span>
+        <span class="color-scheme-value" id="color-scheme-value-5">#ffffff</span>
+      </div>
+    </div>
+  </article>
 </body>
 </html>
