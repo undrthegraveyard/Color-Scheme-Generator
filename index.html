@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
   <link rel="stylesheet" href="css/index.css">
-  <script src="index.js" defer></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Color Scheme Generator</title>
@@ -17,19 +16,19 @@
       <div class="color-scheme">
         <label for="color-scheme">Color Scheme</label>
         <select id="color-scheme" name="color-scheme">
-          <option value="monochromatic">Monochromatic</option>
-          <option value="monochromatic-dark">Monochromatic-Dark</option>
-          <option value="monochromatic-light">Monochromatic-Light</option>
+          <option value="monochrome">Monochrome</option>
+          <option value="monochrome-dark">Monochrome-Dark</option>
+          <option value="monochrome-light">Monochrome-Light</option>
           <option value="analogic">Analogic</option>
-          <option value="complementary">Complementary</option>
-          <option value="analogic-complementary">Analogic-Complementary</option>
+          <option value="complement">Complement</option>
+          <option value="analogic-complement">Analogic-Complement</option>
           <option value="triad">Triad</option>
         </select>
       </div>
       <button id="generate-color-scheme">Get Color Scheme</button>
     </div>
     <div class="color-scheme-generator-body">
-      <div class ="color-scheme-preview">
+      <div class="color-scheme-preview">
         <div class="color-scheme-preview-item" id="color-scheme-color-1"></div>
         <div class="color-scheme-preview-item" id="color-scheme-color-2"></div>
         <div class="color-scheme-preview-item" id="color-scheme-color-3"></div>
@@ -45,5 +44,10 @@
       </div>
     </div>
   </article>
+  
+<script src="js/api.js" type="module"></script>
+<script src="js/ColorSchemeGenerator.js" type="module"></script>
+<script src="js/app.js" type="module"></script>
+</body>
 </body>
 </html>
